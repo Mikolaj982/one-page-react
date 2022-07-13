@@ -42,7 +42,6 @@
 
 .offer-list p {
   word-wrap: break-word;
-  /* width: 40%; */
   line-height: 24px;
   font-size: 24px;
 }
@@ -71,15 +70,6 @@
     text-align: left;
     font-size: 36px;
   }
-
-  /* .offer-list div {
-    width: 260px;
-    height: 260px;
-  } */
-
-  .offer-list div p {
-    width: 45%;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -99,7 +89,6 @@
   }
 
   .offer-list p {
-    /* width: 60%; */
     line-height: 20px;
     font-size: 18px;
   }
