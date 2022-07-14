@@ -1,0 +1,103 @@
+.offer {
+  background-color: #405d78;
+  padding: 70px 0;
+}
+
+.offer > .container {
+  height: 100%;
+}
+
+.offer .container > h2 {
+  color: white;
+  font-size: 26px;
+  padding-bottom: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.offer-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+}
+
+.offer-list > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 335px;
+  height: 335px;
+  background-color: #ddd;
+  text-align: center;
+  box-shadow: 1px 1px 3px black;
+  transition: transform 0.5s linear;
+  -webkit-transition: transform 0.5s linear;
+  -moz-transition: transform 0.5s linear;
+  -ms-transition: transform 0.5s linear;
+  -o-transition: transform 0.5s linear;
+}
+
+.offer-list p {
+  word-wrap: break-word;
+  line-height: 24px;
+  font-size: 24px;
+}
+
+.offer-list > div:nth-of-type(1) {
+  position: relative;
+}
+
+.isNew {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #e07a64;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .offer-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .offer .container > h2 {
+    text-align: left;
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .offer .container > h2 {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .offer-list {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .offer-list > div {
+    width: 200px;
+    height: 200px;
+  }
+
+  .offer-list p {
+    line-height: 20px;
+    font-size: 18px;
+  }
+
+  .offer-list div:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+}
