@@ -1,7 +1,7 @@
 import React from 'react'
 import Box from './Box'
 
-export default function Services({}) {
+export default function Services() {
 
 
   const boxes = [
@@ -19,8 +19,8 @@ export default function Services({}) {
         <h2>Czym zajmuje się nasza firma?</h2>
         <div className="offer-list">
           
-          {boxes.map((box) => (
-            <Box isNew={box.isNew} label={box.label} />
+          {boxes.map((box, index) => (
+            <Box isNew={box.isNew} label={box.label} key={index} />
           ))}
           
         </div>

@@ -8,7 +8,7 @@ function Nav() {
         <div className="nav-links">
           <a href="#about-us">o nas</a>
           <a href="#offer">oferta</a>
-          <a>kontakt</a>
+          <span>kontakt</span>
         </div>
       </div>
     </nav>

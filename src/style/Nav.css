@@ -50,8 +50,9 @@ nav a {
     color: white;
   }
 
-  nav a:last-child {
+  span {
     cursor: not-allowed;
+    color: white;
   }
 
   .nav-links a:not(:last-child) {
